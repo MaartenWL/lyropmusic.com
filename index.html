@@ -3,112 +3,63 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Lyrop Music</title>
-  <meta name="description" content="Cinematic electronic music by Lyrop. Explore the latest release, albums and listening platforms.">
+  <title>Sous Nos Ailes — 9 October 2026 | Lyrop</title>
+  <meta name="description" content="Sous Nos Ailes, the new cinematic electronic release by Lyrop. Out 9 October 2026 on all streaming services.">
   <link rel="canonical" href="https://lyropmusic.com/">
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="music.song">
   <meta property="og:site_name" content="Lyrop">
-  <meta property="og:title" content="Lyrop Music">
-  <meta property="og:description" content="Cinematic electronic music by Lyrop.">
+  <meta property="og:title" content="Sous Nos Ailes — Lyrop">
+  <meta property="og:description" content="A shelter built from synths, voice and memory. Out 9 October 2026.">
   <meta property="og:url" content="https://lyropmusic.com/">
-  <meta property="og:image" content="https://lyropmusic.com/featured-cover.jpg">
+  <meta property="og:image" content="https://lyropmusic.com/img/sous-nos-ailes.jpg">
+  <meta property="og:image:alt" content="Cover artwork for Sous Nos Ailes by Lyrop">
   <meta name="twitter:card" content="summary_large_image">
   <style>
-    :root{color-scheme:dark;--ink:#f5f1ea;--muted:#aaa59d;--accent:#d7b87a;--line:rgba(255,255,255,.13);--panel:rgba(255,255,255,.055);--bg:#08080a}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:radial-gradient(circle at 82% 8%,rgba(75,55,88,.38),transparent 34rem),radial-gradient(circle at 5% 44%,rgba(23,64,69,.27),transparent 32rem),var(--bg);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}a{color:inherit}.shell{width:min(1180px,calc(100% - 40px));margin-inline:auto}.site-header{height:92px;display:flex;align-items:center;justify-content:space-between}.wordmark{font-size:.92rem;font-weight:700;letter-spacing:.38em;text-transform:uppercase;text-decoration:none}nav{display:flex;gap:clamp(18px,4vw,42px)}nav a{color:var(--muted);font-size:.78rem;letter-spacing:.12em;text-decoration:none;text-transform:uppercase;transition:color .2s ease}nav a:hover{color:var(--ink)}
-    .hero{min-height:650px;display:grid;grid-template-columns:1fr 1.08fr;align-items:center;gap:clamp(44px,7vw,100px);padding-block:48px 82px}
-    .kicker{margin:0 0 14px;color:var(--accent);font-size:.7rem;font-weight:700;letter-spacing:.24em;text-transform:uppercase}h1,h2{margin:0;font-family:Georgia,"Times New Roman",serif;font-weight:400;letter-spacing:-.045em}h1{font-size:clamp(4rem,9vw,8.2rem);line-height:.82;text-wrap:balance}h2{font-size:clamp(2.7rem,5vw,5.4rem);line-height:.94}.hero-description{max-width:510px;margin:30px 0;color:#c5c0b8;font-size:clamp(1rem,1.5vw,1.14rem);line-height:1.75}.hero-actions{display:flex;flex-wrap:wrap;gap:12px}.button{display:inline-flex;min-height:54px;align-items:center;justify-content:center;gap:16px;padding:0 22px;border:1px solid var(--line);border-radius:999px;font-size:.84rem;font-weight:650;text-decoration:none;transition:transform .2s ease,background .2s ease}.button:hover{transform:translateY(-2px)}.button.primary{border-color:var(--ink);color:#0b0b0c;background:var(--ink)}.button.secondary:hover{background:var(--panel)}
-    .cover{position:relative;overflow:hidden;background-color:#17161a;background-size:cover;background-position:center;box-shadow:0 38px 100px rgba(0,0,0,.52)}
-    .featured-art{aspect-ratio:1;border-radius:3px;background-image:url('img/le-jardin-des-animaux-electriques.jpg'),linear-gradient(135deg,#392f43 0%,#1e3d40 52%,#b18a58 140%);text-decoration:none;transform:rotate(1.3deg);transition:transform .35s ease}
-    .featured-art:hover{transform:rotate(0) scale(1.012)}
-    .featured-art::after,.album-cover::after{content:"";position:absolute;inset:0;background:linear-gradient(145deg,rgba(255,255,255,.15),transparent 32%,rgba(0,0,0,.22));pointer-events:none}
-    .art-label{position:absolute;z-index:1;right:22px;bottom:20px;color:rgba(255,255,255,.72);font-size:.64rem;letter-spacing:.2em;text-transform:uppercase}
-    .player{padding-bottom:125px}.player iframe{display:block;width:100%;height:152px;border:0;border-radius:14px;background:#181818}.music{padding-block:112px 135px;border-top:1px solid var(--line)}
-    .section-heading{display:grid;grid-template-columns:1.2fr .7fr;align-items:end;gap:48px;margin-bottom:52px}.section-heading>p{max-width:370px;margin:0 0 5px;color:var(--muted);line-height:1.7}
-    .album-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,3vw,40px)}
-    .album-card{text-decoration:none}.album-cover{aspect-ratio:1;box-shadow:0 22px 55px rgba(0,0,0,.33);transition:transform .3s ease}
-    .album-card:hover .album-cover{transform:translateY(-7px)}
-    .album-cover span{position:absolute;z-index:1;bottom:18px;left:19px;font-size:.64rem;font-weight:700;letter-spacing:.3em;text-transform:uppercase}
-    .cover-one{background-image:url('img/Le Jardin des animaux electriques - ALBUM.jpg'),linear-gradient(140deg,#281c35,#765b69 52%,#d4ae74)}
-    .cover-two{background-image:url('img/nutango-album.jpg'),linear-gradient(140deg,#0b3036,#4b6a61 48%,#c49b73)}
-    .cover-three{background-image:url('img/electroccordion-album.jpg'),linear-gradient(140deg,#33252b,#7c4236 48%,#e0b36e)}
-    .album-meta{display:flex;align-items:center;justify-content:space-between;gap:18px;padding-top:18px}.album-meta h3{margin:0 0 5px;font-family:Georgia,"Times New Roman",serif;font-size:1.45rem;font-weight:400}.album-meta p{margin:0;color:var(--muted);font-size:.77rem;letter-spacing:.06em}.round-arrow{display:grid;width:38px;height:38px;flex:0 0 38px;place-items:center;border:1px solid var(--line);border-radius:50%;color:var(--accent)}
-    .about{padding-block:125px;border-top:1px solid var(--line)}
-    .about-grid{display:block;grid-template-columns:1.25fr .7fr;align-items:end;gap:70px}
-    .about-grid p{margin:25 0 0 0;color:#c5c0b8;line-height:1.85}.listen{display:grid;grid-template-columns:.72fr 1.28fr;gap:70px;padding-block:125px;border-top:1px solid var(--line)}
-    .listen h2{font-size:clamp(2.5rem,4.6vw,4.8rem)}.service-grid{display:grid;gap:9px}
-    .service-grid a{display:flex;min-height:62px;align-items:center;gap:16px;padding:12px 17px;border:1px solid var(--line);border-radius:13px;background:var(--panel);text-decoration:none;transition:background .2s ease,transform .2s ease}.service-grid a:hover{transform:translateX(4px);background:rgba(255,255,255,.1)}.service-grid img{object-fit:contain}.service-grid span{flex:1;font-size:.91rem;font-weight:650}.service-grid b{color:var(--accent);font-weight:400}footer{display:flex;min-height:130px;align-items:center;justify-content:space-between;border-top:1px solid var(--line);color:var(--muted)}footer p{margin:0;font-size:.76rem}a:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
-    @media(max-width:760px){.site-header{height:72px}nav{gap:16px}nav a:nth-child(2){display:none}.hero{min-height:auto;grid-template-columns:1fr;padding-block:55px 75px}
-                            .hero-copy{order:2}.featured-art{order:1;width:min(100%,520px);justify-self:center}h1{font-size:clamp(4rem,20vw,7rem)}.player{padding-bottom:90px}
-                            .music,.about,.listen{padding-block:82px}.section-heading,.about-grid,.listen{grid-template-columns:1fr;gap:30px}
-                            .album-grid{grid-template-columns:1fr 1fr}}@media(max-width:520px){.shell{width:min(100% - 28px,1180px)}.album-grid{grid-template-columns:1fr;gap:38px}footer{align-items:flex-start;flex-direction:column;justify-content:center;gap:16px}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+    :root{color-scheme:dark;--ink:#f4f1e9;--muted:#aaa99f;--soft:#d0ccc1;--acid:#edff4c;--gold:#d7a863;--line:rgba(255,255,255,.14);--panel:rgba(7,19,19,.62);--bg:#071011}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:var(--bg);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+    body::before{content:"";position:fixed;z-index:-3;inset:0;background:#071011 url("img/sous-nos-ailes-background.jpg") center top/cover no-repeat}
+    body::after{content:"";position:fixed;z-index:-2;inset:0;background:linear-gradient(180deg,rgba(2,8,8,.18),rgba(2,8,8,.74) 70%,#071011 100%),radial-gradient(circle at 50% 35%,transparent 0 20%,rgba(2,9,9,.28) 65%);pointer-events:none}
+    a{color:inherit}img{max-width:100%}.shell{width:min(1180px,calc(100% - 42px));margin-inline:auto}.site-header{min-height:88px;display:flex;align-items:center;justify-content:space-between;gap:28px}.wordmark{font:700 .9rem/1 Inter,sans-serif;letter-spacing:.4em;text-decoration:none;text-transform:uppercase}nav{display:flex;gap:clamp(18px,4vw,44px)}nav a{color:var(--muted);font-size:.72rem;letter-spacing:.15em;text-decoration:none;text-transform:uppercase;transition:color .2s ease}nav a:hover{color:var(--ink)}
+    .hero{min-height:calc(100svh - 88px);display:grid;grid-template-columns:minmax(0,.92fr) minmax(340px,.78fr);align-items:center;gap:clamp(52px,8vw,120px);padding:54px 0 104px}.hero-copy{position:relative;z-index:1}.kicker{display:flex;align-items:center;gap:12px;margin:0 0 22px;color:var(--acid);font-size:.68rem;font-weight:750;letter-spacing:.24em;text-transform:uppercase}.kicker::before{width:32px;height:1px;background:currentColor;content:""}h1,h2,h3{margin:0;font-family:Georgia,"Times New Roman",serif;font-weight:400}h1{max-width:790px;font-size:clamp(4.4rem,10vw,9.4rem);line-height:.8;letter-spacing:-.058em;text-wrap:balance}.subtitle{margin:26px 0 0;color:var(--soft);font:italic 400 clamp(1.15rem,2vw,1.55rem)/1.5 Georgia,serif}.hero-description{max-width:570px;margin:24px 0 31px;color:#c7c6bc;font-size:clamp(.98rem,1.4vw,1.1rem);line-height:1.78}.hero-actions{display:flex;flex-wrap:wrap;gap:12px}.button{display:inline-flex;min-height:53px;align-items:center;justify-content:center;gap:14px;padding:0 23px;border:1px solid var(--line);border-radius:999px;font-size:.79rem;font-weight:700;letter-spacing:.035em;text-decoration:none;transition:transform .2s ease,background .2s ease,border-color .2s ease}.button:hover{transform:translateY(-2px)}.button.primary{border-color:var(--acid);color:#0b100e;background:var(--acid)}.button.secondary{background:rgba(5,17,17,.4);backdrop-filter:blur(12px)}.button.secondary:hover{border-color:rgba(255,255,255,.32);background:rgba(255,255,255,.08)}
+    .release-visual{position:relative;width:min(100%,560px);justify-self:end}.release-visual::before{position:absolute;z-index:-1;inset:7% -8% -9% 10%;background:radial-gradient(circle,rgba(231,172,86,.21),transparent 68%);filter:blur(28px);content:""}.cover-link{position:relative;display:block;overflow:hidden;aspect-ratio:1;background:#102020;box-shadow:0 42px 110px rgba(0,0,0,.63);text-decoration:none;transform:rotate(.6deg);transition:transform .45s cubic-bezier(.2,.8,.2,1)}.cover-link:hover{transform:rotate(0) scale(1.012)}.cover-link img{display:block;width:100%;height:100%;object-fit:cover}.cover-link::after{position:absolute;inset:0;background:linear-gradient(145deg,rgba(255,255,255,.12),transparent 32%,rgba(0,0,0,.2));pointer-events:none;content:""}.release-status{position:absolute;right:-18px;bottom:26px;padding:11px 16px;color:#101510;background:var(--acid);font-size:.62rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;box-shadow:0 16px 34px rgba(0,0,0,.35)}
+    .preview{margin-top:-28px;padding-bottom:110px}.preview-inner{display:grid;grid-template-columns:170px minmax(0,1fr);align-items:center;gap:30px;padding:22px 28px;border:1px solid var(--line);background:rgba(5,18,18,.72);box-shadow:0 22px 70px rgba(0,0,0,.26);backdrop-filter:blur(18px)}.preview-label{margin:0 0 5px;color:var(--acid);font-size:.62rem;font-weight:750;letter-spacing:.18em;text-transform:uppercase}.preview-title{margin:0;color:var(--soft);font-size:.85rem;line-height:1.4}audio{display:block;width:100%;height:42px;filter:sepia(.18) saturate(.75)}
+    .story,.music,.about,.listen{border-top:1px solid var(--line)}.story{display:grid;grid-template-columns:.72fr 1.28fr;gap:clamp(48px,9vw,130px);padding-block:132px}.section-kicker{margin:0 0 17px;color:var(--gold);font-size:.68rem;font-weight:750;letter-spacing:.22em;text-transform:uppercase}.story h2,.section-heading h2,.about h2,.listen h2{font-size:clamp(2.8rem,6vw,5.8rem);line-height:.92;letter-spacing:-.045em}.story-copy{padding-top:5px}.story-copy p{max-width:670px;margin:0 0 23px;color:#c6c4bb;font-size:clamp(1rem,1.5vw,1.12rem);line-height:1.85}.story-copy p:first-child{color:var(--ink);font:400 clamp(1.5rem,2.6vw,2.35rem)/1.36 Georgia,serif}
+    .music{padding-block:120px 140px}.section-heading{display:grid;grid-template-columns:1.2fr .7fr;align-items:end;gap:48px;margin-bottom:55px}.section-heading>p{max-width:390px;margin:0 0 5px;color:var(--muted);line-height:1.72}.album-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(21px,3vw,40px)}.album-card{text-decoration:none}.album-cover{position:relative;overflow:hidden;aspect-ratio:1;background:#101817 center/cover;box-shadow:0 22px 58px rgba(0,0,0,.34);transition:transform .3s ease}.album-card:hover .album-cover{transform:translateY(-7px)}.album-cover::after{position:absolute;inset:0;background:linear-gradient(145deg,rgba(255,255,255,.12),transparent 34%,rgba(0,0,0,.2));content:""}.album-cover span{position:absolute;z-index:1;bottom:18px;left:19px;font-size:.62rem;font-weight:750;letter-spacing:.3em;text-transform:uppercase}.cover-one{background-image:url("img/Le Jardin des animaux electriques - ALBUM.jpg")}.cover-two{background-image:url("img/nutango-album.jpg")}.cover-three{background-image:url("img/electroccordion-album.jpg")}.album-meta{display:flex;align-items:center;justify-content:space-between;gap:18px;padding-top:18px}.album-meta h3{margin-bottom:5px;font-size:1.42rem}.album-meta p{margin:0;color:var(--muted);font-size:.76rem;letter-spacing:.055em}.round-arrow{display:grid;width:38px;height:38px;flex:0 0 38px;place-items:center;border:1px solid var(--line);border-radius:50%;color:var(--gold)}
+    .about{padding-block:124px}.about p{max-width:860px;margin:28px 0 0;color:#c5c3ba;line-height:1.84}.contact{display:inline-block;margin-top:28px;color:var(--gold);text-underline-offset:5px}.listen{display:grid;grid-template-columns:.72fr 1.28fr;gap:70px;padding-block:125px}.service-grid{display:grid;gap:9px}.service-grid a{display:flex;min-height:62px;align-items:center;gap:16px;padding:12px 17px;border:1px solid var(--line);border-radius:13px;background:rgba(255,255,255,.045);text-decoration:none;transition:background .2s ease,transform .2s ease}.service-grid a:hover{transform:translateX(4px);background:rgba(255,255,255,.09)}.service-grid img{object-fit:contain}.service-grid span{flex:1;font-size:.9rem;font-weight:650}.service-grid b{color:var(--gold);font-weight:400}footer{display:flex;min-height:130px;align-items:center;justify-content:space-between;border-top:1px solid var(--line);color:var(--muted)}footer p{margin:0;font-size:.75rem}a:focus-visible,audio:focus-visible{outline:3px solid var(--acid);outline-offset:4px}
+    @keyframes breathe{0%,100%{filter:saturate(.92) brightness(.9)}50%{filter:saturate(1.06) brightness(1)}}@media(prefers-reduced-motion:no-preference){body::before{animation:breathe 14s ease-in-out infinite}}@media(max-width:820px){.site-header{min-height:72px}nav{gap:17px}nav a:nth-child(2){display:none}.hero{min-height:auto;grid-template-columns:1fr;gap:44px;padding:52px 0 84px}.hero-copy{order:2}.release-visual{order:1;width:min(100%,560px);justify-self:center}.release-status{right:-8px}h1{font-size:clamp(4.2rem,18vw,7.4rem)}.preview{margin-top:0;padding-bottom:84px}.preview-inner{grid-template-columns:1fr;gap:14px}.story,.listen{grid-template-columns:1fr;gap:34px}.story,.music,.about,.listen{padding-block:84px}.section-heading{grid-template-columns:1fr;gap:26px}.album-grid{grid-template-columns:1fr 1fr}}@media(max-width:540px){.shell{width:min(100% - 28px,1180px)}.album-grid{grid-template-columns:1fr;gap:39px}.preview-inner{padding:20px}footer{align-items:flex-start;flex-direction:column;justify-content:center;gap:15px}}@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
   </style>
   <script src="https://app.secureprivacy.ai/script/6ac2b305fa756173baa1fcde.js"></script>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HHTXP9FFE2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-HHTXP9FFE2');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HHTXP9FFE2"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-HHTXP9FFE2');</script>
 </head>
 <body>
-  
-  <header class="site-header shell">
-    <a class="wordmark" href="#top" aria-label="Lyrop home">Lyrop</a>
-    <nav aria-label="Main navigation"><a href="#music">Music</a><a href="#about">About</a><a href="#listen">Listen</a></nav>
-  </header>
-
+  <header class="site-header shell"><a class="wordmark" href="#top" aria-label="Lyrop home">Lyrop</a><nav aria-label="Main navigation"><a href="#release">Release</a><a href="#music">Music</a><a href="#about">About</a><a href="#listen">Listen</a></nav></header>
   <main>
     <section class="hero shell" id="top">
       <div class="hero-copy">
-        <p class="kicker">New release</p><h1>Le Jardin</h1><h2>des animaux électriques</h2>
-        <p class="hero-description">Le Jardin des animaux électriques is a garden of sound where the organic and the synthetic roam as one, and every creature (however strange, however made) finds its own path and place.</p>
-        <div class="hero-actions"><a class="button primary" href="/tracks/le-jardin-des-animaux-electriques.html">Listen now <span aria-hidden="true">↗</span></a><a class="button secondary" href="#music">Explore music</a></div>
+        <p class="kicker">New release · 9 October 2026</p>
+        <h1>Sous Nos Ailes</h1>
+        <p class="subtitle">A shelter built from synths, voice and memory.</p>
+        <p class="hero-description">Cinematic electronic music from an imagined world: a place created for someone vulnerable, where fragility is not something to hide and every strange creature can find shelter beneath its wings.</p>
+        <div class="hero-actions"><a class="button primary" href="#preview">Hear the preview <span aria-hidden="true">↓</span></a><a class="button secondary" href="/tracks/sous-nos-ailes.html">Discover the release <span aria-hidden="true">↗</span></a></div>
       </div>
-      <a class="featured-art cover" href="/tracks/le-jardin-des-animaux-electriques.html" aria-label="Open Track title"><span class="art-label">Featured release</span></a>
+      <div class="release-visual"><a class="cover-link" href="/tracks/sous-nos-ailes.html" aria-label="Discover Sous Nos Ailes"><img src="img/sous-nos-ailes.jpg" alt="Cover artwork for Sous Nos Ailes by Lyrop" width="1600" height="1600"></a><span class="release-status">Out 9 October</span></div>
     </section>
-    <section class="player shell" aria-label="Spotify player">
-      <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/046aXRxji611I2NCwhmjES?utm_source=generator&si=caa149cf79404b71" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>    </section>
-    <section class="music shell" id="music">
-      <div class="section-heading"><div><p class="kicker">Discography</p><h2>Albums &amp; releases</h2></div></div>
-      <div class="album-grid">
-        <a class="album-card" href="#"><div class="album-cover cover cover-one"><span>Lyrop</span></div><div class="album-meta"><div><h3>Le Jardin des animaux électriques </h3><p>upcoming · Album</p></div><span class="round-arrow" aria-hidden="true">↗</span></div></a>
-        <a class="album-card" href="https://lyrop.bandcamp.com/album/nutango"><div class="album-cover cover cover-two"><span>Lyrop</span></div><div class="album-meta"><div><h3>Nu Tango</h3><p>2012 · Album</p></div><span class="round-arrow" aria-hidden="true">↗</span></div></a>
-        <a class="album-card" href="https://lyrop.bandcamp.com/album/electroccordion"><div class="album-cover cover cover-three"><span>Lyrop</span></div><div class="album-meta"><div><h3>Electroccordion</h3><p>2010 · Album</p></div><span class="round-arrow" aria-hidden="true">↗</span></div></a>
-      </div>
-    </section>
-    <section class="about shell" id="about">
-      <p class="kicker">About Lyrop</p>
-      <div class="about-grid">
-        <h2>Music between worlds.</h2>
-        
-        <p>
-          Lyrop is the musical project of Rotterdam-based producer Maarten Lierop, a keyboardist, accordionist and bandoneon player with a deep affection for old-school analogue synthesizers. His music rarely settles within a single genre, moving instead through the spaces between neotango, ambient, electronica and cinematic sound.
-        </p>
-        
-        <p>
-          His current project "Le Jardin des animaux électriques" grows from that instinct to bring different worlds together. Synthesizers, orchestral colours, restless rhythms and fragments of voice coexist with the breath and movement of acoustic instruments. Some sounds are played, some programmed, and others discovered by accident or along a detour. What matters is not where they came from, but the life they bring.
-        
-          A garden never asks its creatures to resemble one another. It gives roots somewhere to deepen, wings somewhere to unfold, and even the strangest forms of life a place among the leaves. Beneath the music lies that same quiet conviction: there is no single right way to exist, to create, or to become. Here, the organic and the synthetic roam side by side. And every creature, however strange, however made, finds its own path and place.
-        </p>
-
-        <p>Feel free to contact me at info@lyropmusic.com</p>
-        
-      </div>
-      </section>
-    <section class="listen shell" id="listen">
-      <div><p class="kicker">Find Lyrop</p><h2>Choose your platform</h2></div>
-      <div class="service-grid">
-        <a href="https://open.spotify.com/artist/6y6sRxGBd62WIZjamNiR7h?si=Y2Mk8YpHTH-kzP35hmlTBg" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/spotify/1ED760" alt="" width="26" height="26"><span>Spotify</span><b aria-hidden="true">↗</b></a>
-        <a href="https://music.apple.com/nl/artist/lyrop/6792718156" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/applemusic/FA243C" alt="" width="26" height="26"><span>Apple Music</span><b aria-hidden="true">↗</b></a>
-        <a href="https://lyrop.bandcamp.com/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/bandcamp/1DA0C3" alt="" width="26" height="26"><span>Bandcamp</span><b aria-hidden="true">↗</b></a>
-        <a href="https://soundcloud.com/LYROP" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/soundcloud/FF5500" alt="" width="26" height="26"><span>SoundCloud</span><b aria-hidden="true">↗</b></a>
-        <a href="https://music.youtube.com/watch?v=ZELR8Neqqwo&si=wjcbq821UabJPrSD" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/youtubemusic/FF0033" alt="" width="26" height="26"><span>YouTube Music</span><b aria-hidden="true">↗</b></a>
-      </div>
-    </section>
+    <section class="preview shell" id="preview" aria-label="Sous Nos Ailes preview"><div class="preview-inner"><div><p class="preview-label">First listen</p><p class="preview-title">41-second preview</p></div><audio controls preload="metadata"><source src="sous-nos-ailes-preview.mp3" type="audio/mpeg">Your browser does not support the audio element.</audio></div></section>
+    <section class="story shell" id="release"><div><p class="section-kicker">Behind the music</p><h2>An imagined safe place.</h2></div><div class="story-copy"><p>“Sous Nos Ailes” began years ago as the soundtrack to an imaginary science-fiction world.</p><p>It was written for someone close to me who was still a young child—someone I feared might be too vulnerable for the real world. So I imagined an alternative for him: a place where the organic and the electric could live side by side, and where tenderness could be a form of strength.</p><p>Inspired by Vangelis and cinematic electronic music, the track holds both protection and unease: warmth shaped from the knowledge that the world outside cannot always be made safe.</p></div></section>
+    <section class="music shell" id="music"><div class="section-heading"><div><p class="section-kicker">Discography</p><h2>Albums &amp; releases</h2></div><p>Electronic music moving between neotango, ambient sound, orchestral colour and imagined worlds.</p></div><div class="album-grid">
+      <a class="album-card" href="/tracks/le-jardin-des-animaux-electriques.html"><div class="album-cover cover-one"><span>Lyrop</span></div><div class="album-meta"><div><h3>Le Jardin des animaux électriques</h3><p>Upcoming · Album</p></div><span class="round-arrow" aria-hidden="true">↗</span></div></a>
+      <a class="album-card" href="https://lyrop.bandcamp.com/album/nutango" target="_blank" rel="noopener noreferrer"><div class="album-cover cover-two"><span>Lyrop</span></div><div class="album-meta"><div><h3>Nu Tango</h3><p>2012 · Album</p></div><span class="round-arrow" aria-hidden="true">↗</span></div></a>
+      <a class="album-card" href="https://lyrop.bandcamp.com/album/electroccordion" target="_blank" rel="noopener noreferrer"><div class="album-cover cover-three"><span>Lyrop</span></div><div class="album-meta"><div><h3>Electroccordion</h3><p>2010 · Album</p></div><span class="round-arrow" aria-hidden="true">↗</span></div></a>
+    </div></section>
+    <section class="about shell" id="about"><p class="section-kicker">About Lyrop</p><h2>Music between worlds.</h2><p>Lyrop is the musical project of Rotterdam-based producer Maarten Lierop, a keyboardist, accordionist and bandoneon player with a deep affection for old-school analogue synthesizers. His music rarely settles within a single genre, moving instead through the spaces between neotango, ambient, electronica and cinematic sound.</p><a class="contact" href="mailto:info@lyropmusic.com">info@lyropmusic.com</a></section>
+    <section class="listen shell" id="listen"><div><p class="section-kicker">Find Lyrop</p><h2>Choose your platform</h2></div><div class="service-grid">
+      <a href="https://open.spotify.com/artist/6y6sRxGBd62WIZjamNiR7h?si=Y2Mk8YpHTH-kzP35hmlTBg" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/spotify/1ED760" alt="" width="26" height="26"><span>Spotify</span><b aria-hidden="true">↗</b></a>
+      <a href="https://music.apple.com/nl/artist/lyrop/6792718156" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/applemusic/FA243C" alt="" width="26" height="26"><span>Apple Music</span><b aria-hidden="true">↗</b></a>
+      <a href="https://lyrop.bandcamp.com/" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/bandcamp/1DA0C3" alt="" width="26" height="26"><span>Bandcamp</span><b aria-hidden="true">↗</b></a>
+      <a href="https://soundcloud.com/LYROP" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/soundcloud/FF5500" alt="" width="26" height="26"><span>SoundCloud</span><b aria-hidden="true">↗</b></a>
+      <a href="https://music.youtube.com/watch?v=ZELR8Neqqwo&si=wjcbq821UabJPrSD" target="_blank" rel="noopener noreferrer"><img src="https://cdn.simpleicons.org/youtubemusic/FF0033" alt="" width="26" height="26"><span>YouTube Music</span><b aria-hidden="true">↗</b></a>
+    </div></section>
   </main>
   <footer class="shell"><a class="wordmark" href="#top">Lyrop</a><p>© <span id="year"></span> Lyrop · lyropmusic.com</p></footer>
   <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
