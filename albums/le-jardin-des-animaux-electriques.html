@@ -48,6 +48,14 @@
     .note a { color:var(--gold); }
     footer { padding:28px 0 48px; border-top:1px solid var(--line); color:#8e8983; font-size:.78rem; }
     @media (max-width:760px) { main { grid-template-columns:1fr; padding-top:18px; } .cover { max-width:570px; margin-inline:auto; } }
+
+    .album-player { grid-column: 1 / -1; margin-top: -30px; padding-top: 34px; border-top: 1px solid var(--line); }
+    .album-player h2 { font: 400 clamp(1.7rem,3vw,2.6rem) Georgia,serif; margin: 0 0 10px; }
+    .album-player p { color: var(--muted); font-size: .95rem; line-height: 1.7; margin: 0 0 18px; }
+    .album-player iframe { display: block; width: 100%; max-width: 100%; height: 480px; border: 0; border-radius: 12px; background: #171717; }
+    .album-player .soundcloud-credit { margin-top: 8px; font-size: .72rem; }
+    .album-player .soundcloud-credit a { color: var(--gold); }
+    @media (max-width:760px) { .album-player { margin-top: 0; } .album-player iframe { height: 430px; } }
   </style>
   <script src="https://app.secureprivacy.ai/script/6ac2b305fa756173baa1fcde.js"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-HHTXP9FFE2"></script>
@@ -77,6 +85,13 @@
         The separately released <a href="/tracks/le-jardin-des-animaux-electriques.html">Le Jardin des Animaux Électriques — Voix Electrique</a> is a vocal interpretation of the title piece, not a track on this album. The vocal version of <a href="/tracks/sous-nos-ailes.html">Sous Nos Ailes — Voix Electrique</a> is also a standalone release and will not appear on the album.
       </aside>
     </article>
+
+    <section class="album-player" aria-label="Listen to the album in progress">
+      <h2>Listen to the album in progress</h2>
+      <p>Hear the tracks currently shared from <em>Le Jardin des Animaux Électriques</em> on SoundCloud. This is a work in progress, not the final album or its confirmed track listing.</p>
+      <iframe title="Le Jardin des Animaux Électriques — album in progress on SoundCloud" loading="lazy" width="100%" height="480" scrolling="no" allow="encrypted-media" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A2256582137&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe>
+      <p class="soundcloud-credit"><a href="https://soundcloud.com/lyrop/sets/le-jardin-des-animaux" target="_blank" rel="noopener noreferrer">Open the current album playlist on SoundCloud</a></p>
+    </section>
   </main>
   <footer class="shell">© <span id="year"></span> Lyrop · <a href="/">lyropmusic.com</a></footer>
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
