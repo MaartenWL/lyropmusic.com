@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Nu Tango (2012) — Album | Lyrop</title>
-  <meta name="description" content="Explore Nu Tango, a 2012 album by Lyrop blending neotango and electronic music. Listen to the album on Bandcamp.">
+  <meta name="description" content="Explore Nu Tango, a 2012 album by Lyrop blending neotango and electronic music. Listen to the album on SoundCloud or Bandcamp.">
   <link rel="canonical" href="https://lyropmusic.com/albums/nutango.html">
   <meta property="og:type" content="music.album">
   <meta property="og:site_name" content="Lyrop">
   <meta property="og:title" content="Nu Tango (2012) — Lyrop">
-  <meta property="og:description" content="Explore Lyrop’s Nu Tango album, where tango influences meet electronic production. Listen on Bandcamp.">
+  <meta property="og:description" content="Explore Lyrop’s Nu Tango album, where tango influences meet electronic production. Listen on SoundCloud or Bandcamp.">
   <meta property="og:url" content="https://lyropmusic.com/albums/nutango.html">
   <meta property="og:image" content="https://lyropmusic.com/img/nutango-album.jpg">
   <meta property="og:image:alt" content="Cover artwork for Nu Tango by Lyrop">
@@ -31,7 +31,8 @@
       "Electronic music"
     ],
     "sameAs": [
-      "https://lyrop.bandcamp.com/album/nutango"
+      "https://lyrop.bandcamp.com/album/nutango",
+      "https://soundcloud.com/lyrop/sets/nutango"
     ]
   }
   </script>
@@ -84,9 +85,12 @@
       .album-player iframe { height:360px; }
     }
 
-    .bandcamp-link { display:flex; justify-content:space-between; align-items:center; gap:14px; padding:18px 20px; margin-top:18px; color:var(--text); text-decoration:none; border:1px solid var(--gold); border-radius:12px; background:rgba(217,189,136,.1); font-weight:650; transition:background .2s ease; }
-    .bandcamp-link:hover, .bandcamp-link:focus-visible { background:rgba(217,189,136,.2); }
-    .bandcamp-link span:last-child { color:var(--gold); font-size:1.25rem; }
+    .album-player iframe { display:block; width:100%; border:0; border-radius:12px; background:#171717; }
+    .album-links { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; margin-top:18px; }
+    .album-service-link { display:flex; justify-content:space-between; align-items:center; gap:10px; padding:15px 17px; color:var(--text); text-decoration:none; border:1px solid var(--line); border-radius:12px; background:rgba(255,255,255,.04); font-weight:650; transition:background .2s ease,border-color .2s ease; }
+    .album-service-link:hover, .album-service-link:focus-visible { border-color:var(--gold); background:rgba(217,189,136,.12); }
+    .album-service-link span:last-child { color:var(--gold); font-size:1.2rem; }
+    @media (max-width:400px) { .album-links { grid-template-columns:1fr; } }
   </style>
   <script src="https://app.secureprivacy.ai/script/6ac2b305fa756173baa1fcde.js"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-HHTXP9FFE2"></script>
@@ -117,17 +121,30 @@
       <div class="album-content">
         <section class="album-player" aria-label="Listen to Nu Tango">
           <h2>Listen to Nu Tango</h2>
-          <p>The album is available to stream and purchase on Bandcamp.</p>
-          <a class="bandcamp-link" href="https://lyrop.bandcamp.com/album/nutango" target="_blank" rel="noopener noreferrer">
-            <span>Listen to the album on Bandcamp</span>
-            <span aria-hidden="true">↗</span>
-          </a>
+          <p>Listen to the album here on SoundCloud, or open it on your preferred platform.</p>
+          <iframe
+            title="Nu Tango by Lyrop — SoundCloud album player"
+            loading="lazy"
+            width="100%"
+            height="440"
+            scrolling="no"
+            allow="encrypted-media"
+            src="https://w.soundcloud.com/player/?url=https%3A%2F%2Fsoundcloud.com%2Flyrop%2Fsets%2Fnutango&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true">
+          </iframe>
+          <nav class="album-links" aria-label="Listen on music platforms">
+            <a class="album-service-link" href="https://soundcloud.com/lyrop/sets/nutango" target="_blank" rel="noopener noreferrer">
+              <span>SoundCloud</span><span aria-hidden="true">↗</span>
+            </a>
+            <a class="album-service-link" href="https://lyrop.bandcamp.com/album/nutango" target="_blank" rel="noopener noreferrer">
+              <span>Bandcamp</span><span aria-hidden="true">↗</span>
+            </a>
+          </nav>
         </section>
         <section class="album-about" aria-label="About Nu Tango">
           <h2>About the album</h2>
           <p class="intro">Where tango meets electronic music.</p>
           <p class="body">Nu Tango is an earlier album in Lyrop's catalogue, exploring the meeting point between neotango and electronic production.</p>
-          <p class="body">Discover the full release, including its available tracks and listening options, on <a href="https://lyrop.bandcamp.com/album/nutango" target="_blank" rel="noopener noreferrer">Bandcamp</a>.</p>
+          <p class="body">The album is available on <a href="https://soundcloud.com/lyrop/sets/nutango" target="_blank" rel="noopener noreferrer">SoundCloud</a> and <a href="https://lyrop.bandcamp.com/album/nutango" target="_blank" rel="noopener noreferrer">Bandcamp</a>.</p>
         </section>
       </div>
     </article>
