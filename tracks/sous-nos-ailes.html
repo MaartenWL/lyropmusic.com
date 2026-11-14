@@ -311,7 +311,37 @@
     @media (prefers-reduced-motion: reduce) {
       *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
     }
-  </style>
+
+    /* Compact cover-and-title header: the player appears without a full-cover scroll. */
+    .release-heading { display: grid; grid-template-columns: 210px minmax(0, 1fr); gap: 26px; align-items: center; padding: 25px 30px 6px; }
+    .release-heading .cover-wrap { width: 100%; aspect-ratio: 1; border-radius: 15px; }
+    .release-title { min-width: 0; }
+    .release-title h1 { font-size: clamp(1.9rem, 4vw, 3.4rem); line-height: 1.04; }
+    .release-title .artist { margin-top: 8px; }
+    .content { padding-top: 22px; }
+    .player { margin-bottom: 20px; }
+    .player iframe { height: 166px; }
+    .services { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; }
+    .service-link { min-height: 52px; padding: 10px 12px; }
+    .release-details { margin-top: 36px; padding-top: 28px; border-top: 1px solid var(--border); }
+    .release-details h2 { margin: 0 0 12px; font: 400 1.65rem Georgia, serif; }
+    .release-details .intro { margin: 12px 0; }
+    @media (max-width: 520px) {
+      .page { width: min(100% - 20px, 760px); padding-top: 18px; }
+      .brand { margin-bottom: 16px; }
+      .release-heading { grid-template-columns: 112px minmax(0, 1fr); gap: 14px; padding: 17px 16px 0; }
+      .release-heading .cover-wrap { border-radius: 10px; }
+      .release-title h1 { font-size: clamp(1.38rem, 5.3vw, 2rem); }
+      .release-title .eyebrow { font-size: .58rem; letter-spacing: .12em; }
+      .release-title .artist { font-size: .85rem; }
+      .content { padding: 14px 16px 22px; }
+      .services { grid-template-columns: 1fr 1fr; gap: 7px; }
+      .service-link { min-height: 46px; gap: 8px; padding: 9px; }
+      .service-name { font-size: .82rem; }
+      .service-icon { width: 22px; height: 22px; flex-basis: 22px; }
+      .action { display: none; }
+    }
+    </style>
   <script src="https://app.secureprivacy.ai/script/6ac2b305fa756173baa1fcde.js"></script>
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-HHTXP9FFE2"></script>
@@ -329,23 +359,20 @@
     <a class="brand" href="https://lyropmusic.com/" aria-label="Lyrop home">Lyrop</a>
 
     <article class="card">
+      <div class="release-heading">
       <div class="cover-wrap">
         <img class="cover" src="https://lyropmusic.com/img/sous-nos-ailes.jpg" alt="Cover artwork for Sous Nos Ailes by Lyrop" width="1600" height="1600">
       </div>
-
-      <div class="content">
+        <div class="release-title">
         <p class="eyebrow">Standalone vocal single</p>
         <h1>Sous Nos Ailes</h1>
         <p class="artist" style="margin-top:14px;color:var(--accent)">Voix Électriques</p>
         <p class="artist">Lyrop</p>
-        <p class="intro">Sous Nos Ailes — Voix Électriques is a standalone cinematic electronic vocal release by Lyrop, separate from the forthcoming album Le Jardin des Animaux Électriques.</p>
-        <p class="intro">Released: <time datetime="2026-10-09">9 October 2026</time> · ISRC: QZMHL2638217</p>
-        <p class="intro">This vocal recording is not included on the upcoming <a href="/albums/le-jardin-des-animaux-electriques.html">Le Jardin des Animaux Électriques album</a>.</p>
-        <p class="intro"><strong>Credits</strong> · Duration: 5:45 · Composer, lyricist and producer: Maarten Lierop · UPC: 885975827261.</p>
-        <p class="intro">Vocals on this version were generated with AI. The composition, lyrics and production are by Maarten Lierop.</p>
-
+        </div>
+      </div>
+      <div class="content">
         <div class="player" aria-label="SoundCloud player">
-          <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay; encrypted-media" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2382744126&color=%23ff5500&auto_play=true&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/lyrop" title="Lyrop" target="_blank" style="color: #cccccc; text-decoration: none;">Lyrop</a> · <a href="https://soundcloud.com/lyrop/sous-nos-ailes" title="Sous Nos Ailes - voix électriques" target="_blank" style="color: #cccccc; text-decoration: none;">Sous Nos Ailes - voix électriques</a></div>
+          <iframe title="Listen to the vocal single by Lyrop on SoundCloud" loading="lazy" width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay; encrypted-media" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2382744126&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/lyrop" title="Lyrop" target="_blank" style="color: #cccccc; text-decoration: none;">Lyrop</a> · <a href="https://soundcloud.com/lyrop/sous-nos-ailes" title="Sous Nos Ailes - voix électriques" target="_blank" style="color: #cccccc; text-decoration: none;">Sous Nos Ailes - voix électriques</a></div>
         </div>
 
         <p class="listen-label">Listen on</p>
@@ -388,6 +415,16 @@
             </a>
           </li>
         </ul>
+
+        <section class="release-details" aria-label="Release information">
+          <h2>About this release</h2>
+
+        <p class="intro">Sous Nos Ailes — Voix Électriques is a standalone cinematic electronic vocal release by Lyrop, separate from the forthcoming album Le Jardin des Animaux Électriques.</p>
+        <p class="intro">Released: <time datetime="2026-10-09">9 October 2026</time> · ISRC: QZMHL2638217</p>
+        <p class="intro">This vocal recording is not included on the upcoming <a href="/albums/le-jardin-des-animaux-electriques.html">Le Jardin des Animaux Électriques album</a>.</p>
+        <p class="intro"><strong>Credits</strong> · Duration: 5:45 · Composer, lyricist and producer: Maarten Lierop · UPC: 885975827261.</p>
+        <p class="intro">Vocals on this version were generated with AI. The composition, lyrics and production are by Maarten Lierop.</p>
+        </section>
       </div>
     </article>
 
